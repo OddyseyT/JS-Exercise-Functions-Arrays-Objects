@@ -65,9 +65,16 @@ console.log(makePersonObject);
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
+function getName(id, name, email) {
+  const helloName = function(name) {
+    return `Hello, my nmae is $[name]`;
+  }
+  return (helloName);
   /* code here */
 }
+getName(7, "Theresa M Lennon", "oddyseyt@gmail.com");
+console.log(getName);
+
 
 /**
  * ### Challenge `makeSmartPerson`
